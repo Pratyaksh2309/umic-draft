@@ -1,5 +1,4 @@
 import logo from "../assets/maxresdefault.png"
-import "./Header.css"
 
 function Header(){
    return(
