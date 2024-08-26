@@ -1,6 +1,3 @@
-
-
-
 import vid from "../../assets/Snapinsta.app_video_B34210F4F18AE9E739D96D4A315DA581_video_dashinit.mp4"
 
 function SHero() {

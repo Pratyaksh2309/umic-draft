@@ -1,11 +1,9 @@
-import Header from "../Header";
 import Footer from "../Footer";
 import logo from "../../assets/like-svgrepo-com.svg"
 
 function Sponsors(){
     return(
         <>
-    <Header/>
         <div>
         <div class="container px-4" id="custom-cards">
     <h2 class="p-4 pb-2 border-bottom">Sponsors</h2>

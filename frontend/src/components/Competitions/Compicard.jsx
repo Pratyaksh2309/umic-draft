@@ -1,11 +1,12 @@
 import "./Compicard.css"
 import logo from "../../assets/th.jpeg"
+import logo2 from "../../assets/like-svgrepo-com.svg"
 
 function Compi(){
     return(
         <>
   <div class="position-relative p-5 m-3 text-muted border border-dashed rounded-5">
-  <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
+  <button type="button" class="position-absolute top-0 end-0 p-3 m-3 bg-secondary bg-opacity-10 rounded-pill"><img src={logo2} alt="Bootstrap" width="32" height="32" /></button>
 <main class="container">
   <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
     <div class="col-lg-6 px-0">

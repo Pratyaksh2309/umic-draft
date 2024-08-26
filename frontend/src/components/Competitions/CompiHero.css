@@ -8,3 +8,18 @@
         display: block !important;
     }
 }
+
+.image-left,
+.image-right {
+    position: absolute;
+}
+
+.image-left {
+    left: -70px; /* Adjust as needed */
+    transform: rotate(-16deg); /* Adjust the angle as needed */
+}
+
+.image-right {
+    right: -50px; /* Adjust as needed */
+    transform: rotate(16deg); /* Adjust the angle as needed */
+}

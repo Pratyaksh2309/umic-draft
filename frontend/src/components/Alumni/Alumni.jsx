@@ -1,11 +1,13 @@
 import AlumCard from "./AlumCard";
 import Footer from "../Footer";
-import Header from "../Header";
 
 function Alumni(){
     return(
         <>
-        <Header/>
+                 <h2 class="p-4 pb-2 border-bottom">Alums</h2>
+                 <br/>
+        <AlumCard/>
+        <AlumCard/>
         <AlumCard/>
         <Footer/>
         </>
