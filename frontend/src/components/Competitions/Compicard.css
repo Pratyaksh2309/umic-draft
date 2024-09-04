@@ -1,31 +1,18 @@
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem; /* Smaller text size on small screens */
+  }
+  
+  .lead {
+    font-size: 1rem; /* Smaller text size for paragraphs on small screens */
+  }
+}
 
-.product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-  }
-  
+/* Flexbox to make the right card (image) larger */
+.card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Allows the image column to grow */
+}

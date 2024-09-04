@@ -7,8 +7,6 @@ function Alumni(){
                  <h2 class="p-4 pb-2 border-bottom">Alums</h2>
                  <br/>
         <AlumCard/>
-        <AlumCard/>
-        <AlumCard/>
         <Footer/>
         </>
 

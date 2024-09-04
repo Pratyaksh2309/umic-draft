@@ -4,11 +4,7 @@ function MyCard() {
         <style
           dangerouslySetInnerHTML={{
             __html: `
-              .wrapper {
-                width: 90%;
-                margin: 0 auto;
-                max-width: 80rem;
-              }
+             
               .cols {
                 display: flex;
                 flex-wrap: wrap;
@@ -128,11 +124,11 @@ function MyCard() {
                   width: 100%;
                   margin: 0 0 1rem 0;
                 }
-              }
+              
             `
           }}
         />
-        <div className="wrapper">
+        <div className="flex ">
             <div className="col" ontouchstart="this.classList.toggle('hover');">
               <div className="container2">
                 <div

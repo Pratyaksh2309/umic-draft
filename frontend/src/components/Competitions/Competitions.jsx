@@ -8,8 +8,6 @@ function Competition(){
         <>
         <Chero/>
         <Compi/>
-        <Compi/>
-        <Compi/>
         <Footer/>
         </>
 
