@@ -20,7 +20,7 @@ function SedricaCard(){
             </div>
             <hr/>
             <h1 className="title-heading">Team Leads</h1>
-            <div className="row">
+            <div className="row er">
                 <div className="col-lg-3">
                     <img className="team-member" src={person}></img>
                     <h3 className="title-name">Person 1</h3>
@@ -40,7 +40,7 @@ function SedricaCard(){
             </div>
             <hr/>
             <h1 className="title-heading">Subsystems</h1>
-            <div className="row">
+            <div className="row er">
                 <div className="col-lg-4">
                     <img className="team-member" src={person}></img>
                     <h3 className="title-name">Person 1</h3>
@@ -56,7 +56,7 @@ function SedricaCard(){
             </div>
             <hr/>
             <h1 className="title-heading">Sophies</h1>
-            <div className="row">
+            <div className="row er">
                 <div className="col-lg-3">
                     <img className="team-member" src={person}></img>
                     <h3 className="title-name">Person 1</h3>
@@ -77,7 +77,7 @@ function SedricaCard(){
             <hr/>
 
             <h1 className="title-heading">Business Team</h1>
-            <div className="row">
+            <div className="row er">
                 <div className="col-lg-3">
                     <img className="team-member" src={person}></img>
                     <h3 className="title-name">Person 1</h3>

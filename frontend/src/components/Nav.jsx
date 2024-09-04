@@ -18,9 +18,9 @@ function MyClass(){
       case "/alumni":
         return 2;
       case "/sponsors":
-        return 3;
-      case "/Teams/Sedrica":
         return 4;
+      case "/Teams/Sedrica":
+        return 3;
       default:
         return 0;
     }
@@ -99,11 +99,11 @@ function MyClass(){
               className={`list ${activeIndex === 3 ? "active" : ""}`}
               onClick={() => handleClick(3)}
             >
-              <a href="/sponsors">
+              <a href="/Teams/Sedrica">
                 <span className="icon">
-                  <ion-icon name="people"></ion-icon>
+                  <ion-icon name="car-sport"></ion-icon>
                 </span>
-                <span className="text">Sponsors</span>
+                <span className="text">Sedrica</span>
                 <span className="circle" />
               </a>
             </li>
@@ -111,11 +111,11 @@ function MyClass(){
               className={`list ${activeIndex === 4 ? "active" : ""}`}
               onClick={() => handleClick(4)}
             >
-              <a href="/Teams/Sedrica">
+              <a href="/sponsors">
                 <span className="icon">
-                  <ion-icon name="car-sport"></ion-icon>
+                  <ion-icon name="people"></ion-icon>
                 </span>
-                <span className="text">Sedrica</span>
+                <span className="text">Sponsors</span>
                 <span className="circle" />
               </a>
             </li>

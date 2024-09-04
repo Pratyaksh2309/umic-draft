@@ -27,7 +27,13 @@ function Footer(){
               <i className="fab fa-linkedin-in" />
             </a>
           </div>
+          <br/>
+          <h4> Contact Us</h4>
+          <h6> Phono No: </h6>
+          <h6> Email: </h6>
+          <h6> Location: </h6>
         </div>
+        
         <div class="d-flex flex-sm-row justify-content-end py-4 my-4 border-top" style={{color: "white"}}>
       <p>© 2024 SeDriCa. IIT BOMBAY.</p>
       </div>
