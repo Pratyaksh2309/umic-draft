@@ -34,7 +34,7 @@ function AlumCard() {
       />
       <div className="container">
         <div className="card-content">
-          <MyCard />
+          <MyCard name="Pratyaskh" detail=""/>
           <h2 className="fw-normal">Heading</h2>
           <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         </div>

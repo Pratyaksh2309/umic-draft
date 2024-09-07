@@ -24,13 +24,7 @@ function Content() {
         {/* Text Section */}
         <div className="col-md-7">
           <h2 className="featurette-heading fw-normal lh-1">
-            <img
-              style={{boxShadow: "0 0 15px rgba(0, 0, 0, 0.6);"}}
-              src={im}
-              width="50px"
-              height="auto"
-              alt="UMIC Logo"
-            />{" "}
+            {" "}
             UMIC <span className="text-body-secondary">It’ll blow your mind.</span>
           </h2>
           <br />

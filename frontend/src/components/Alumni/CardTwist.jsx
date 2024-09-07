@@ -1,4 +1,4 @@
-function MyCard() {
+function MyCard({name, detail}) {
     return (
       <>
         <style
@@ -139,7 +139,7 @@ function MyCard() {
                   }}
                 >
                   <div className="inner">
-                    <p>INDIA</p>
+                    <p> {name}</p>
                     <span>Taj Mahal</span>
                   </div>
                 </div>
