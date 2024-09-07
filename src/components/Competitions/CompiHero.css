@@ -42,3 +42,6 @@
     0 0 10px rgba(255, 0, 0, 0.6), /* Red glow */
     0 0 15px rgba(255, 0, 0, 0.4); /* Red glow */
 }
+h1, h3{
+  font-family: 'Ubuntu';
+}

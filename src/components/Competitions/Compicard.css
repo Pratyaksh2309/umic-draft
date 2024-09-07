@@ -16,3 +16,10 @@
   justify-content: center;
   flex: 1; /* Allows the image column to grow */
 }
+h1{
+  font-family: 'Ubuntu';
+}
+
+p{
+  font-family: 'Roboto';
+}

@@ -3,6 +3,18 @@ import logo2 from "../../assets/like-svgrepo-com.svg";
 import person from '../../assets/person.jpg'
 import MyCard from "../Alumni/CardTwist";
 
+import oc from '../../assets/people/oc.jpg'
+import lead1 from '../../assets/people/lead1_new.jpg'
+import lead2 from '../../assets/people/lead2_new.jpg'
+import hoo from '../../assets/people/hoo_new.jpg'
+
+import sub1 from '../../assets/people/percep_subsys_head.jpg'
+import sub2 from '../../assets/people/percep_subsys_head_2_new.png'
+import sub3 from '../../assets/people/mecha_subsys_head.jpg'
+import sub4 from '../../assets/people/control_subsy_head_new.JPG'
+import sub5 from '../../assets/people/motion_planning_subsys_head_new.jpg'
+
+
 import './SedricaTeam.css'
 
 function SedricaCard(){
@@ -75,29 +87,30 @@ function SedricaCard(){
         
         <div className="center-container">
             <h1 className="position">OC</h1>
-            <MyCard/>
-            <h2 className="fw-normal">Heading</h2>
+            <MyCard img={oc}/>
+            <h2 className="fw-normal">Atharva Kulkarni</h2>
             <p className="pgraph">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         </div>
         {/* Team Leads */}
         <h1 className="position">Team Leads</h1>
         <div className="two-container">
             <div className="card-content">
-                <MyCard />
-                <h2 className="fw-normal">Heading</h2>
+                <MyCard img={lead1}/>
+                <h2 className="fw-normal">Aman Badave</h2>
                 <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             </div>
             <div className="card-content">
-                <MyCard />
-                <h2 className="fw-normal">Heading</h2>
+                <MyCard img={lead2}/>
+                <h2 className="fw-normal">Aryan Mishra</h2>
                 <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             </div>
+            
         </div>
         {/* Head of operations */}
         <div className="center-container">
             <h1 className="position">Head of Operations</h1>
-            <MyCard/>
-            <h2 className="fw-normal">Heading</h2>
+            <MyCard img={hoo}/>
+            <h2 className="fw-normal">Areeb Asgar</h2>
             <p className="pgraph">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         </div>
 
@@ -106,17 +119,27 @@ function SedricaCard(){
         <h1 className="position">Subsystem Heads</h1>
         <div className="container">
             <div className="card-content">
-                <MyCard />
-                <h2 className="fw-normal">Heading</h2>
+                <MyCard img={sub1}/>
+                <h2 className="fw-normal">Kshitij Vaidya</h2>
                 <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             </div>
             <div className="card-content">
-                <MyCard />
+                <MyCard img={sub2}/>
                 <h2 className="fw-normal">Heading</h2>
                 <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             </div>
             <div className="card-content">
-                <MyCard />
+                <MyCard img={sub3}/>
+                <h2 className="fw-normal">Heading</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the third column.</p>
+            </div>
+            <div className="card-content">
+                <MyCard img={sub4}/>
+                <h2 className="fw-normal">Heading</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the third column.</p>
+            </div>
+            <div className="card-content">
+                <MyCard img={sub5}/>
                 <h2 className="fw-normal">Heading</h2>
                 <p>Another exciting bit of representative placeholder content. This time, we've moved on to the third column.</p>
             </div>
@@ -145,11 +168,7 @@ function SedricaCard(){
                 <h2 className="fw-normal">Heading</h2>
                 <p>Another exciting bit of representative placeholder content. This time, we've moved on to the third column.</p>
             </div>
-            <div className="card-content">
-                <MyCard />
-                <h2 className="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the third column.</p>
-            </div>
+
         </div>
     </>
     );

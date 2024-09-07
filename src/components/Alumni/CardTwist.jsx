@@ -1,4 +1,4 @@
-function MyCard() {
+function MyCard({img}) {
   return (
     <>
       <style
@@ -44,7 +44,7 @@ function MyCard() {
               height: 160px; /* Increase height */
               content: '';
               display: block;
-              opacity: 0.6;
+              opacity: 0;
               background-color: #000;
               backface-visibility: hidden;
               border-radius: 50%;
@@ -138,7 +138,7 @@ function MyCard() {
               className="front"
               style={{
                 backgroundImage:
-                  "url(https://th.bing.com/th?id=OLC.bkOvL06Gy8OS4g480x360&w=211&h=140&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2)",
+                  `url(${img})`,
               }}
             ></div>
             <div className="back">
