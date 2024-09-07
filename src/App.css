@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+
+background: linear-gradient(90deg, rgba(133,131,172,1) 0%, rgba(104,185,238,1) 48%, rgba(255,102,130,1) 100%);
+/* background-image: linear-gradient(to right, #e12d2d, #db004c, #cc0068, #b10081, #8b1d95, #761f88, #621f7a, #501e6b, #481348, #360f2b, #210b16, #000000); */
+/* background-repeat: no-repeat;
+background-size: cover; */
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.12s ease-in-out;
+  }
+  
+  .page.fade-out {
+    opacity: 0;
+  }
+  
+  .page.fade-in {
+    opacity: 1;
+  }
