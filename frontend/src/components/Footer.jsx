@@ -15,16 +15,16 @@ function Footer() {
             <div className="footer-col">
               <h4>Follow Us</h4>
               <div className="social-links">
-                <a href="#">
+                <a href="https://www.facebook.com/innovationcell" target="_blank">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
+                <a href="https://x.com/umic_iitb" target="_blank">
+                  <i className="fa fa-times" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/umic_iitb/" target="_blank">
                   <i className="fab fa-instagram" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/unmesh-mashruwala-innovation-cell-iit-bombay/mycompany/" target="_blank">
                   <i className="fab fa-linkedin-in" />
                 </a>
               </div>
@@ -39,18 +39,19 @@ function Footer() {
               >
                 <div>
                   <h4>Contact Us</h4>
-                  <h6>Phone No:</h6>
+                  <h6>Name: Aryan Mishra</h6>
+                  <h6>Phone No: 8197020074</h6>
                   <h6>Email:</h6>
                   <h6>Location:</h6>
                 </div>
-                {/* Adjusting image Y-axis using margin */}
+              
                 <img
                   src={logo}
                   className="logo"
                   alt="Logo"
                   width="180"
                   height="180"
-                  style={{ objectFit: "contain", marginTop: "-80px" }} // Adjust the Y-axis position
+                  style={{ objectFit: "contain"}} 
                 />
               </div>
             </div>

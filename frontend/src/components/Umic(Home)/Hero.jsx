@@ -8,7 +8,7 @@ function Hero() {
     const carouselElement = document.getElementById('carouselExampleCaptions');
     if (carouselElement) {
       const carousel = new window.bootstrap.Carousel(carouselElement, {
-        interval: 3000, // Time between slides in milliseconds
+        interval: 2000, // Time between slides in milliseconds
         wrap: true, // Loop back to the start when the end is reached
       });
     }
@@ -43,21 +43,21 @@ function Hero() {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="1000">
+          <div className="carousel-item active" data-bs-interval="2000">
             <img src={logo} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1000">
+          <div className="carousel-item" data-bs-interval="2000">
             <img src={logo} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1000">
+          <div className="carousel-item" data-bs-interval="2000">
             <img src={logo} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
               <h5>Third slide label</h5>
