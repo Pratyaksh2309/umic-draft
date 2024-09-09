@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
-import {Routes} from "react-router-dom"
+import { BrowserRouter as Router, Route, useLocation, Routes } from 'react-router-dom';
 
 import MyClass from './components/Nav';
 import Competition from './components/Competitions/Competitions';
@@ -30,23 +29,22 @@ function PageTransition({ children }) {
   );
 }
 
-
 function App() {
   return (
     <div className="App">
-    <Router>
-      <MyClass />
-      <PageTransition>
-        <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route path="/competitions" element={<Competition />} />
-          <Route path="/alumni" element={<Alumni />} />
-          <Route path="/sponsors" element={<Sponsors />} />
-          <Route path="/Teams/Sedrica" element={<Sedrica />} />
-        </Routes>
-      </PageTransition>
-    </Router>
- </div>
+      <Router>
+        <MyClass />
+        <PageTransition>
+          <Routes>
+            <Route exact path="/" element={<Homepage />} />
+            <Route path="/competitions" element={<Competition />} />
+            <Route path="/alumni" element={<Alumni />} />
+            <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/Teams/Sedrica" element={<Sedrica />} />
+          </Routes>
+        </PageTransition>
+      </Router>
+    </div>
   );
 }
 
