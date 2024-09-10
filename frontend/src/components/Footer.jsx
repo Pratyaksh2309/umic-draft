@@ -15,16 +15,16 @@ function Footer() {
             <div className="footer-col">
               <h4>Follow Us</h4>
               <div className="social-links">
-                <a href="https://www.facebook.com/innovationcell" target="_blank">
+                <a href="https://www.facebook.com/innovationcell" target="_blank" rel="noreferrer">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://x.com/umic_iitb" target="_blank">
+                <a href="https://x.com/umic_iitb" target="_blank" rel="noreferrer">
                   <i className="fa fa-times" />
                 </a>
-                <a href="https://www.instagram.com/umic_iitb/" target="_blank">
+                <a href="https://www.instagram.com/umic_iitb/" target="_blank" rel="noreferrer">
                   <i className="fab fa-instagram" />
                 </a>
-                <a href="https://www.linkedin.com/company/unmesh-mashruwala-innovation-cell-iit-bombay/mycompany/" target="_blank">
+                <a href="https://www.linkedin.com/company/unmesh-mashruwala-innovation-cell-iit-bombay/mycompany/" target="_blank" rel="noreferrer">
                   <i className="fab fa-linkedin-in" />
                 </a>
               </div>
@@ -49,8 +49,8 @@ function Footer() {
                   src={logo}
                   className="logo"
                   alt="Logo"
-                  width="180"
-                  height="180"
+                  width="90"
+                  height="90"
                   style={{ objectFit: "contain"}} 
                 />
               </div>

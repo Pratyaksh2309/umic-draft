@@ -1,39 +1,70 @@
 .sponsors-container {
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  /* background-color: rgba(250,250,250,0.1); */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style each row of sponsor images */
+.sponsor-row {
+  display: flex;
+  justify-content: center; /* Centers the images in each row */
+  margin-bottom: 10px;
+}
+
+/* Default style for images */
+.sponsor-image {
+  width: 10.75rem; /* Default size for large screens */
+  height: auto;
+  margin: 5px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.sponsor-image:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1002px) { /* Smaller screens (like tablets) */
+  .sponsor-row {
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
   }
-  
-  .sponsors-container:hover {
-    transform: translateY(5px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  }
-  
   .sponsor-image {
-    width: calc(33.33% - 20px); 
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 10px;
-    transition: transform 0.3s; 
+    width: 6.75rem; /* Smaller size for smaller screens */
   }
-  
-  .sponsor-image:hover {
-    transform: scale(1.05); 
+}
+
+@media (max-width: 702px) { /* Smaller screens (like tablets) */
+  .sponsor-row {
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
   }
-  
-  @media (max-width: 992px) {
-    .sponsor-image {
-      width: calc(50% - 20px); 
-    }
+  .sponsor-image {
+    width: 5.75rem; /* Smaller size for smaller screens */
   }
-  
-  @media (max-width: 576px) {
-    .sponsor-image {
-      width: calc(100% - 20px); 
-    }
+}
+
+@media (max-width: 605px) { /* Smaller screens (like tablets) */
+  .sponsor-row {
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
   }
-  
+  .sponsor-image {
+    width: 5rem; /* Smaller size for smaller screens */
+  }
+}
+
+
+
+@media (max-width: 540px) { /* Very small screens (like phones) */
+  .sponsor-image {
+    width: 4.5rem; /* Further reduced size for very small screens */
+  }
+}
+@media (max-width: 503px) { /* Very small screens (like phones) */
+  .sponsor-image {
+    width: 4rem; /* Further reduced size for very small screens */
+  }
+}
