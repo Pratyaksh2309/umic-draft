@@ -1,7 +1,7 @@
-import { useRef } from 'react';
+import { useRef,useEffect } from 'react';
 import vid from "../../assets/Snapinsta.app_video_An9msjr1wGwuBBltzUQZ1xCh63J2LtO2e06lut7BHSFc9wEmIDSbgKm1BAMcoq7l0UxTdg7NKALwDC0bxUTY7B-D.mp4";
 import Card from "./Card";
-import im from "../../assets/Umic.png";
+
 
 function Content() {
   // Reference to the video element
@@ -17,6 +17,32 @@ function Content() {
       }
     }
   };
+  const startVideo = () => {
+    if (videoRef.current && videoRef.current.paused) {
+      videoRef.current.play().catch(error => {
+        console.log('Video playback failed:', error);
+      });
+    }
+  };
+
+  useEffect(() => {
+    // Add event listeners for scroll and touch events
+    const handleUserInteraction = () => {
+      startVideo();
+      // Remove event listeners after the first interaction
+      window.removeEventListener('scroll', handleUserInteraction);
+      window.removeEventListener('touchstart', handleUserInteraction);
+    };
+
+    window.addEventListener('scroll', handleUserInteraction);
+    window.addEventListener('touchstart', handleUserInteraction);
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleUserInteraction);
+      window.removeEventListener('touchstart', handleUserInteraction);
+    };
+  }, []);
 
   return (
     <>
@@ -24,7 +50,6 @@ function Content() {
         {/* Text Section */}
         <div className="col-md-7">
           <h2 className="featurette-heading fw-normal lh-1">
-            {" "}
             UMIC <span className="text-body-secondary">It’ll blow your mind.</span>
           </h2>
           <br />
@@ -44,7 +69,7 @@ function Content() {
             }}
             autoPlay
             loop
-            onClick={togglePlayback}  // Toggle playback on click
+            onClick={togglePlayback} 
           >
             <source src={vid} type="video/mp4" />
           </video>

@@ -4,7 +4,7 @@ import logo from "../../assets/th.jpeg";
 function Compi() {
   return (
     <>
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">
@@ -26,7 +26,7 @@ function Compi() {
         </div>
       </div>
 
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">
@@ -48,7 +48,7 @@ function Compi() {
         </div>
       </div>
 
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">
@@ -70,7 +70,7 @@ function Compi() {
         </div>
       </div>
 
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">
@@ -91,7 +91,7 @@ function Compi() {
           </div>
         </div>
       </div>
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">
@@ -112,7 +112,7 @@ function Compi() {
           </div>
         </div>
       </div>
-      <div className="position-relative px-5 m-3">
+      <div className="position-relative m-3">
         <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           {/* Row to arrange text on the left and image on the right */}
           <div className="row">

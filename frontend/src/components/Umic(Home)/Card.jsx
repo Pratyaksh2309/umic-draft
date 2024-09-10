@@ -50,3 +50,7 @@ efficient performance to safety considerations, we plan to cover them all!
 }
 
 export default Card;
+
+
+
+

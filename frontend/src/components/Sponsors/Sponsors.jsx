@@ -50,7 +50,7 @@ function Sponsors() {
         </div>
         {/* Row 5 */}
         <div className="sponsor-row"> 
-          <img src={ast} alt="Ast" className="sponsor-image" />
+          <img src={ast} alt="Ast" className="sponsor-image"  />
         </div>
       </div>
       <Footer />
