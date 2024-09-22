@@ -19,8 +19,14 @@ function MyClass() {
         return 1;
       case "/Teams/Sedrica":
         return 2;
+      case "/MediaBlog":
+          return 3;
+      case "/Gallery":
+          return 4;
       case "/sponsors":
-        return 3;
+        return 5;
+      case "/ResearchGroup":
+        return 6;
       default:
         return 0;
     }
@@ -69,7 +75,7 @@ function MyClass() {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "\n @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); \n .navigation {position: relative;height: 70px;display: flex;justify-content: flex-end;align-items: center;border: 2px solid white; padding:45px 0px 45px 45px;}.navigation ul {display: flex;}.navigation ul li {    position: relative;    width: 70px;  height: 70px;  list-style: none;  z-index: 1;}.navigation ul li a {position: relative;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;text-align: center; font-weight: 500;} .navigation ul li a .icon {   position: relative;    display: block;    line-height: 75px;    font-size: 1.5em;    text-align: center;    color: hsl(0, 0%, 100%, 40%);} .navigation ul li.active a .icon {    color: hsl(0, 0%, 100%);} .navigation ul li a .icon:hover{color: hsl(0, 0%, 100%); transform: scale(1.2);} .navigation ul li a .text {    position: absolute;color: whitesmoke;    font-weight: 400;    font-size: 0.75em;letter-spacing: 0.05em;    opacity: 0;    transform: translateY(35px);}  .navigation ul li.active a .text {    opacity: 1;} \n     .navigation ul li a .circle {\n            position: absolute;\n       top:60%;     display: block;\n            width: 50px;\n            height: 50px;\n            background: transparent;\n            border-radius: 50%;\n            border: 1.8px solid #fff;\n            transform: translateY(-37px) scale(0);\n    transition: transform 0.5s ease, left 0.5s ease;    }\n\n        .navigation ul li.active a .circle {\n                           transform: translateY(-37px) scale(1);\n        }\n\n     "
+              "\n @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); \n .navigation {position: relative;height: 70px;display: flex;justify-content: flex-end;align-items: center;border: 2px solid white; padding:45px 0px 45px 45px;}.navigation ul {display: flex;}.navigation ul li {    position: relative;    width: 70px;  height: 70px;  list-style: none;  z-index: 1;}.navigation ul li a {position: relative;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;text-align: center; font-weight: 500;} .navigation ul li a .icon {   position: relative;    display: block;    line-height: 90px;    font-size: 1.5em;    text-align: center;    color: hsl(0, 0%, 100%, 40%);} .navigation ul li.active a .icon {    color: hsl(0, 0%, 100%); line-height: 70px } .navigation ul li a .icon:hover{color: hsl(0, 0%, 100%); transform: scale(1.2);} .navigation ul li a .text {    position: absolute;color: whitesmoke;    font-weight: 400;    font-size: 0.75em;letter-spacing: 0.05em;    opacity: 0;    transform: translateY(35px);}  .navigation ul li.active a .text {    opacity: 1;} \n     .navigation ul li a .circle {\n            position: absolute;\n       top:60%;     display: block;\n            width: 50px;\n            height: 50px;\n            background: transparent;\n            border-radius: 50%;\n            border: 1.8px solid #fff;\n            transform: translateY(-37px) scale(0);\n    transition: transform 0.5s ease, left 0.5s ease;    }\n\n        .navigation ul li.active a .circle {\n                           transform: translateY(-37px) scale(1);\n        }\n\n     "
       }}
         />
         <div className="navigation">
@@ -128,6 +134,30 @@ function MyClass() {
               className={`list ${activeIndex === 3 ? "active" : ""}`}
               onClick={() => handleClick(3)}
             >
+              <Link to="/MediaBlog">
+                <span className="icon">
+                <ion-icon name="newspaper"></ion-icon>
+                </span>
+                <span className="text">MediaBlogs</span>
+                <span className="circle" />
+              </Link>
+            </li>
+            <li
+              className={`list ${activeIndex === 4 ? "active" : ""}`}
+              onClick={() => handleClick(4)}
+            >
+              <Link to="/Gallery">
+                <span className="icon">
+                <ion-icon name="images"></ion-icon>
+                </span>
+                <span className="text">Gallery</span>
+                <span className="circle" />
+              </Link>
+            </li>
+            <li
+              className={`list ${activeIndex === 5 ? "active" : ""}`}
+              onClick={() => handleClick(5)}
+            >
               <Link to="/sponsors">
                 <span className="icon">
                   <ion-icon name="people"></ion-icon>
@@ -136,11 +166,23 @@ function MyClass() {
                 <span className="circle" />
               </Link>
             </li>
+            <li
+              className={`list ${activeIndex === 6 ? "active" : ""}`}
+              onClick={() => handleClick(6)}
+            >
+              <Link to="/ResearchGroup">
+                <span className="icon">
+                <ion-icon name="flask"></ion-icon>
+                </span>
+                <span className="text">Research</span>
+                <span className="circle" />
+              </Link>
+            </li>
          
           </ul>
 
           <div className="hamburger-menu icon" onClick={toggleMenu} style={{ position: "absolute",top:"20px", height: "50px" }}>
-            <img height="40px" width="40px" style={{ bottom: "100px" }} src={bars} />
+            <img height="40px" width="40px" style={{ bottom: "100px" }} src={bars} alt="Bars"/>
           </div>
         </div>
 
@@ -148,7 +190,10 @@ function MyClass() {
           <Link to="/" onClick={() => handleClick(0)}>UMIC</Link>
           <Link to="/competitions" onClick={() => handleClick(1)}>Competition</Link>
           <Link to="/Teams/Sedrica" onClick={() => handleClick(2)}>Sedrica</Link>
-          <Link to="/sponsors" onClick={() => handleClick(3)}>Sponsors</Link>
+          <Link to="/MediaBlog" onClick={() => handleClick(3)}>MediaBlogs</Link>
+          <Link to="/Gallery" onClick={() => handleClick(4)}>Gallery</Link>
+          <Link to="/sponsors" onClick={() => handleClick(5)}>Sponsors</Link>
+          <Link to="/ResearchGroup" onClick={() => handleClick(6)}>Research</Link>
           <a style={{ color: "red" }} href={location.pathname} onClick={() => handleClick(activeIndex)}>Close</a>
         </div>
       </div>

@@ -330,7 +330,7 @@ function SedricaCard() {
       />
       {/* OCs */}
       <div className="center-container">
-        <h1 className="position">OC</h1>
+        <h1 className="position">Overall Coordinator</h1>
         <MyCard img={oc} lnk={'https://www.linkedin.com/in/atharva-kulkarni-9b962422b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} />
         <h2 className="fw-normal">Atharva Kulkarni</h2>
       </div>
