@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation,Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Sedrica from "../assets/Sedrica.png";
-import Umic from "../assets/Umic.png";
-import bars from "../assets/bars-solid.svg"
+import bars from "../assets/bars.jpg";
 import "./Nav.css";
 
 function MyClass() {
@@ -18,11 +17,9 @@ function MyClass() {
         return 0;
       case "/competitions":
         return 1;
-      case "/alumni":
+      case "/Teams/Sedrica":
         return 2;
       case "/sponsors":
-        return 4;
-      case "/Teams/Sedrica":
         return 3;
       default:
         return 0;
@@ -70,87 +67,89 @@ function MyClass() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
         <style
-    dangerouslySetInnerHTML={{
-      __html:
-        "\n        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');\n\n         .navigation {\n            position: relative;\n               height: 70px;\n            background:\n                linear-gradient(205deg,\n #00fffc, #eee);\n            display: flex;\n            justify-content: flex-end;\n            align-items: center;\n            border-radius: 10px;\n        }\n\n        .navigation ul {\n            display: flex;\n              }\n\n        .navigation ul li {\n            position: relative;\n            width: 70px;\n            height: 70px;\n            list-style: none;\n            z-index: 1;\n        }\n\n        .navigation ul li a {\n            position: relative;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            flex-direction: column;\n            width: 100%;\n            text-align: center;\n            font-weight: 500;\n        }\n\n        .navigation ul li a .icon {\n            position: relative;\n            display: block;\n            line-height: 75px;\n            font-size: 1.5em;\n            text-align: center;\n            color: #000;\n            transition: .5s;\n        }\n\n        .navigation ul li.active a .icon {\n            transform: translateY(-32px);\n        }\n\n        .navigation ul li a .text {\n            position: absolute;\n            color: #000;\n            font-weight: 400;\n            font-size: .75em;\n            letter-spacing: .05em;\n            opacity: 0;\n            transform: translateY(20px);\n            transition: .5s;\n        }\n\n        .navigation ul li.active a .text {\n            opacity: 1;\n            transform: translateY(10px);\n        }\n\n        .navigation ul li a .circle {\n            position: absolute;\n            display: block;\n            width: 50px;\n            height: 50px;\n            background: transparent;\n            border-radius: 50%;\n            border: 1.8px solid #000;\n            transform: translateY(-37px) scale(0);\n        }\n\n        .navigation ul li.active a .circle {\n            transition: .5s;\n            transition-delay: .5s;\n            transform: translateY(-37px) scale(1);\n        }\n\n        .indicator {\n            position: absolute;\n            top: -60%;\n            width: 70px;\n            height: 70px;\n            background:\n                linear-gradient(0deg,\n                    #eee, #00fffc);\n            border: 6px solid #06021b;\n            border-radius: 50%;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            transition: .5s;\n        }\n\n        .indicator::before {\n            content: '';\n            position: absolute;\n            top: 50%;\n            left: -22px;\n            width: 20px;\n            height: 20px;\n            background: transparent;\n            border-top-right-radius: 20px;\n            box-shadow: 1px -10px 0 #06021b;\n        }\n\n        .indicator::after {\n            content: '';\n            position: absolute;\n            top: 50%;\n            right: -22px;\n            width: 20px;\n            height: 20px;\n            background: transparent;\n            border-top-left-radius: 20px;\n            box-shadow: -1px -10px 0 #06021b;\n        }\n\n        .navigation ul li:nth-child(1).active~.indicator {\n            transform: translateX(calc(70px * 0));\n        }\n\n        .navigation ul li:nth-child(2).active~.indicator {\n            transform: translateX(calc(70px * 1));\n        }\n\n        .navigation ul li:nth-child(3).active~.indicator {\n            transform: translateX(calc(70px * 2));\n        }\n\n        .navigation ul li:nth-child(4).active~.indicator {\n            transform: translateX(calc(70px * 3));\n        }\n\n        .navigation ul li:nth-child(5).active~.indicator {\n            transform: translateX(calc(70px * 4));\n        }\n\n        /* -- External Social Link CSS Styles -- */\n\n        #source-link {\n            top: 120px;\n        }\n\n        #source-link>i {\n            color: rgb(94, 106, 210);\n        }\n\n        #yt-link {\n            top: 65px;\n        }\n\n        #yt-link>i {\n            color: rgb(219, 31, 106);\n\n        }\n\n        #Fund-link {\n            top: 10px;\n        }\n\n        #Fund-link>i {\n            color: rgb(255, 251, 0);\n\n        }\n\n        .meta-link {\n            align-items: center;\n            backdrop-filter: blur(3px);\n            background-color: rgba(255, 255, 255, 0.05);\n            border: 1px solid rgba(255, 255, 255, 0.1);\n            border-radius: 6px;\n            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);\n            cursor: pointer;\n            display: inline-flex;\n            gap: 5px;\n            left: 10px;\n            padding: 10px 20px;\n            position: fixed;\n            text-decoration: none;\n            transition: background-color 600ms, border-color 600ms;\n            z-index: 10000;\n        }\n\n        .meta-link:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n            border: 1px solid rgba(255, 255, 255, 0.2);\n        }\n\n        .meta-link>i,\n        .meta-link>span {\n            height: 20px;\n            line-height: 20px;\n        }\n\n        .meta-link>span {\n            color: white;\n            font-family: \"Rubik\", sans-serif;\n            transition: color 600ms;\n        }\n    "
-    }}
-  />
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); \n .navigation {position: relative;height: 70px;display: flex;justify-content: flex-end;align-items: center;border: 2px solid white; padding:45px 0px 45px 45px;}.navigation ul {display: flex;}.navigation ul li {    position: relative;    width: 70px;  height: 70px;  list-style: none;  z-index: 1;}.navigation ul li a {position: relative;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;text-align: center; font-weight: 500;} .navigation ul li a .icon {   position: relative;    display: block;    line-height: 75px;    font-size: 1.5em;    text-align: center;    color: hsl(0, 0%, 100%, 40%);} .navigation ul li.active a .icon {    color: hsl(0, 0%, 100%);} .navigation ul li a .icon:hover{color: hsl(0, 0%, 100%); transform: scale(1.2);} .navigation ul li a .text {    position: absolute;color: whitesmoke;    font-weight: 400;    font-size: 0.75em;letter-spacing: 0.05em;    opacity: 0;    transform: translateY(35px);}  .navigation ul li.active a .text {    opacity: 1;} \n     .navigation ul li a .circle {\n            position: absolute;\n       top:60%;     display: block;\n            width: 50px;\n            height: 50px;\n            background: transparent;\n            border-radius: 50%;\n            border: 1.8px solid #fff;\n            transform: translateY(-37px) scale(0);\n    transition: transform 0.5s ease, left 0.5s ease;    }\n\n        .navigation ul li.active a .circle {\n                           transform: translateY(-37px) scale(1);\n        }\n\n     "
+      }}
+        />
         <div className="navigation">
-        <img src={Umic} className="logo" alt="Logo" width="60" height="60" style={{ position: "absolute", left: "10px", top: "50%" ,transform: "translateY(-50%)",
-    objectFit: "contain"}}/> 
-          <img src={Sedrica} className="logo" alt="Logo" width="150" height="150" style={{ position: "absolute", left: "80px", top: "50%" ,transform: "translateY(-50%)",
-    objectFit: "contain"}}/> 
+          <img
+            src={Sedrica}
+            className="logo"
+            alt="Logo"
+            width="150"
+            height="100"
+            style={{
+              position: "absolute",
+              left: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              objectFit: "contain",
+            }}
+          />
           <ul>
-            <li className={`list ${activeIndex === 0 ? "active" : ""}`} onClick={() => handleClick(0)}>
-              <a href="/">
-                <span className="icon"><ion-icon name="home"></ion-icon></span>
+            <li
+              className={`list ${activeIndex === 0 ? "active" : ""}`}
+              onClick={() => handleClick(0)}
+            >
+              <Link to="/">
+                <span className="icon">
+                  <ion-icon name="home"></ion-icon>
+                </span>
                 <span className="text">UMIC</span>
                 <span className="circle" />
-              </a>
+              </Link>
             </li>
             <li
               className={`list ${activeIndex === 1 ? "active" : ""}`}
               onClick={() => handleClick(1)}
             >
-              <a href="/competitions">
+              <Link to="/competitions">
                 <span className="icon">
                   <ion-icon name="trophy"></ion-icon>
                 </span>
                 <span className="text">Competition</span>
                 <span className="circle" />
-              </a>
+              </Link>
             </li>
             <li
               className={`list ${activeIndex === 2 ? "active" : ""}`}
               onClick={() => handleClick(2)}
             >
-              <a href="/alumni">
-                <span className="icon">
-                  <ion-icon name="people-circle"></ion-icon>
-                </span>
-                <span className="text">Alumni</span>
-                <span className="circle" />
-              </a>
-            </li>
-            <li
-              className={`list ${activeIndex === 3 ? "active" : ""}`}
-              onClick={() => handleClick(3)}
-            >
-              <a href="/Teams/Sedrica">
+              <Link to="/Teams/Sedrica">
                 <span className="icon">
                   <ion-icon name="car-sport"></ion-icon>
                 </span>
                 <span className="text">Sedrica</span>
                 <span className="circle" />
-              </a>
+              </Link>
             </li>
             <li
-              className={`list ${activeIndex === 4 ? "active" : ""}`}
-              onClick={() => handleClick(4)}
+              className={`list ${activeIndex === 3 ? "active" : ""}`}
+              onClick={() => handleClick(3)}
             >
-              <a href="/sponsors">
+              <Link to="/sponsors">
                 <span className="icon">
                   <ion-icon name="people"></ion-icon>
                 </span>
                 <span className="text">Sponsors</span>
                 <span className="circle" />
-              </a>
+              </Link>
             </li>
-            <div className="indicator" style={{ transform: `translateX(calc(70px * ${activeIndex}))` }} />
+         
           </ul>
 
-          <div className="hamburger-menu icon" onClick={toggleMenu} style={{position: "absolute",height:"50px"}}>
-          <img height="40px" width="40px" style={{bottom:"100px"}}src={bars}/>
+          <div className="hamburger-menu icon" onClick={toggleMenu} style={{ position: "absolute",top:"20px", height: "50px" }}>
+            <img height="40px" width="40px" style={{ bottom: "100px" }} src={bars} />
+          </div>
         </div>
-        </div>
-        
+
         <div ref={menuRef} className={`nav-menu ${menuOpen ? "active" : ""}`}>
-          <a href="/" onClick={() => handleClick(0)}>UMIC</a>
-          <a href="/competitions" onClick={() => handleClick(1)}>Competition</a>
-          <a href="/alumni" onClick={() => handleClick(2)}>Alumni</a>
-          <a href="/Teams/Sedrica" onClick={() => handleClick(3)}>Sedrica</a>
-          <a href="/sponsors" onClick={() => handleClick(4)}>Sponsors</a>
-          <a style={{color:"red"}} href={location.pathname} onClick={() => handleClick(activeIndex)}>Close</a>
+          <Link to="/" onClick={() => handleClick(0)}>UMIC</Link>
+          <Link to="/competitions" onClick={() => handleClick(1)}>Competition</Link>
+          <Link to="/Teams/Sedrica" onClick={() => handleClick(2)}>Sedrica</Link>
+          <Link to="/sponsors" onClick={() => handleClick(3)}>Sponsors</Link>
+          <a style={{ color: "red" }} href={location.pathname} onClick={() => handleClick(activeIndex)}>Close</a>
         </div>
       </div>
       <Helmet>

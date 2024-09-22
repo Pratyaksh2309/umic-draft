@@ -57,7 +57,7 @@ function Footer() {
             </div>
           </div>
           <div
-            className="d-flex flex-sm-row justify-content-end py-4 my-4 border-top"
+            className="d-flex flex-sm-row justify-content-end pt-4 mt-4 border-top"
             style={{ color: "white" }}
           >
             <p>© 2024 SeDriCa. IIT BOMBAY.</p>

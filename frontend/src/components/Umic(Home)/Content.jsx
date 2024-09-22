@@ -50,7 +50,7 @@ function Content() {
         {/* Text Section */}
         <div className="col-md-7">
           <h2 className="featurette-heading fw-normal lh-1">
-            UMIC <span className="text-body-secondary">It’ll blow your mind.</span>
+            UMIC
           </h2>
           <br />
           <p className="lead">

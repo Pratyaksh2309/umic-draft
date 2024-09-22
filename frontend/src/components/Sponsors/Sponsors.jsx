@@ -15,10 +15,12 @@ import vcn from "../../assets/sponsor/vcn.png"
 import asb from "../../assets/sponsor/asbsys.png"
 import ea from "../../assets/sponsor/ea.png"
 import "./Sponsors.css"; // Import the CSS file
+import MyClass from "../Nav";
 
 function Sponsors() {
   return (
     <div>
+      <MyClass/>
       <h2 className="p-4 pb-2 border-bottom">Sponsors</h2>
       <div className="sponsors-container">
         {/* Row 1 */}
@@ -50,7 +52,7 @@ function Sponsors() {
         </div>
         {/* Row 5 */}
         <div className="sponsor-row"> 
-          <img src={ast} alt="Ast" className="sponsor-image"  />
+          <img src={ast} alt="Ast" className="sponsor-image small-image"  />
         </div>
       </div>
       <Footer />
