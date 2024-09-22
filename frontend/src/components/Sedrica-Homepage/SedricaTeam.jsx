@@ -231,7 +231,7 @@
 
 
 
-import MyCard from "../Alumni/CardTwist";
+import MyCard from "./CardTwist";
 
 import oc from '../../assets/people/oc.jpg';
 import lead1 from '../../assets/people/lead1_new.jpg';
