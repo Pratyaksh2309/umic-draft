@@ -1,6 +1,6 @@
 import "./Compicard.css";
 import logo from "../../assets/th.jpeg";
-
+import asme from "../../assets/asme.png"
 function Compi() {
   return (
     <>
@@ -18,8 +18,8 @@ function Compi() {
 
             {/* Image Column */}
             <div className="col-md-6 card-right">
-              <div className="d-flex justify-content-center  h-100">
-                <img src={logo} alt="Competition" className="img-fluid" />
+              <div className="d-flex justify-content-center  w-500%">
+                <img src={asme} alt="Competition" className="img-fluid" />
               </div>
             </div>
           </div>

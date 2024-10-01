@@ -1,5 +1,14 @@
+.p img{
+  opacity: 50%;
+}
 
+.p img:hover{
+  opacity: 100%;
+}
 
+.navigation ul li.active .icon img{
+  opacity: 100%;
+}
 /* Hamburger Menu Styles */
 .hamburger-menu {
   display: none; /* Hidden by default */

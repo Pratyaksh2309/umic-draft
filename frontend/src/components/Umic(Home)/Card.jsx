@@ -1,3 +1,4 @@
+import logo from "../../assets/maxresdefault.jpg"
 import logo2 from "../../assets/Sed.png";
 
 function Card() {
@@ -11,12 +12,12 @@ function Card() {
         }}
       >
         <div className="row d-flex align-items-stretch">
-          {/* Left Image Box */}
+          
           <div className="col-lg-6 d-flex align-items-stretch mb-3 mb-lg-0">
             <div className="w-100 border rounded shadow-sm position-relative">
               <img
                 className="bd-placeholder-img w-100 h-100"
-                src={logo2}
+                src={logo}
                 alt="Logo"
                 style={{ objectFit: "cover" }}
               />

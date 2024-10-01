@@ -1,100 +1,322 @@
+// import Footer from "../Footer";
+// import MyClass from "../Nav";
+
+// import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+// import { useState, useEffect } from "react"
+// import './MGallery.css'
+
+// import img1 from '../../assets/images/IMG_2387.jpg'
+// import img2 from '../../assets/images/IMG_2390.jpg'
+// import img3 from '../../assets/images/IMG_2395.jpg'
+// import img4 from '../../assets/images/IMG_2399.jpg'
+// import img5 from '../../assets/images/IMG_2400.jpg'
+// import img6 from '../../assets/images/IMG_2405.jpg'
+// import img7 from '../../assets/images/IMG_2414.jpg'
+// import img8 from '../../assets/images/IMG_2418.jpg'
+// import img9 from '../../assets/images/IMG_2419.jpg'
+// import img10 from '../../assets/images/IMG_2420.jpg'
+
+// import prev from '../../assets/images/prev_img.svg'
+// import next from '../../assets/images/next_img.svg'
+// import close from '../../assets/images/close.svg'
+
+
+// const images = [
+//   img1, img2, img3, img4, img5, img6, img7, img10, img8, img9, img6, img5, 
+// ]
+
+// function MGallery(){
+
+//   const [data, setData] = useState({img: '', i: 0})
+
+//   function viewImage(img, i){
+//       setData({img, i})
+//   }
+
+//   function imgAction(action){
+//       let i = data.i;
+//       if (action === 'next-image'){
+//           setData({img: images[i + 1], i: i+1});
+//       }
+//       else if (action === 'prev-image'){
+//           setData({img: images[i - 1], i: i-1});
+//       }
+//       if(!action){
+//           setData({img: '', i: 0})
+//       }
+
+//   }
+//   useEffect(() => {
+//     if (data.img) {
+//         document.body.style.overflow = 'hidden'; // Disable scroll
+//     } else {
+//         document.body.style.overflow = 'auto'; // Re-enable scroll
+//     }
+
+//     // Cleanup on unmount
+//     return () => {
+//         document.body.style.overflow = 'auto';
+//     };
+//     }, [data.img]);
+
+    
+
+
+//   return(
+//       <>
+//         <MyClass/>
+//         <br/>
+//         <h1>Gallery</h1>
+//         {/* Gallery Component */}
+//         {
+//           data.img &&
+//           <div style={{width: '100%', height: '100vh', background: 'rgba(0, 0, 0, 0.8)', top:0, zIndex:2,
+//               display: 'flex', justifyContent: 'center', alignItems: 'center', overflowY: 'hidden', position: 'fixed',
+//           }}>      
+              
+//               <button className="img-change-btn-left" onClick={() => imgAction('prev-image')}>
+//               <img src={prev} alt="Previous" className="img-btn" />
+//               </button>
+//               <button className="close-btn" onClick={() => imgAction()}>
+//               <img src={close} alt="Previous" className="img-btn" />
+//               </button>
+//               <img src={data.img} style={{width: 'auto', maxWidth: '92%', maxHeight: '92%'}}></img>
+//               <button className="img-change-btn-right" onClick={() => imgAction('next-image')}>
+//               <img src={next} alt="Previous" className="img-btn" />
+//               </button>
+//           </div>
+          
+//       }
+      
+//       <div style={{padding: '10px'}}>
+//           <ResponsiveMasonry
+//                   columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+//               <Masonry gutter="20px">
+//                   {images.map((image, i) => (
+//                       <img
+//                           key={i}
+//                           src={image}
+//                           style={{width: "100%", display: "block", cursor: "pointer"}}
+//                           alt=""
+//                           onClick={() => viewImage(image,i)}
+//                       />
+//                   ))}
+//               </Masonry>
+//           </ResponsiveMasonry>
+//       </div>
+        
+        
+        
+//         <Footer/>
+
+//       </>
+// )
+// }
+
+// export default MGallery;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useState, useEffect } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Footer from "../Footer";
 import MyClass from "../Nav";
-import "./MGallery.css"
+import './MGallery.css';
 
-function MGallery(){
-    return(
-        <>
-        <MyClass/>
-        <br/>
-<div className="bdy">
-  <div className="grid-container2">
-    <div>
-      <img
-        className="grid-item grid-item-1"
-        src="https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"I'm so happy today!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-2"
-        src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"I see those nugs."</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-3"
-        src="https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"I love you so much!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-4"
-        src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"I'm the baby of the house!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-5"
-        src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"Are you gunna throw the ball?"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-6"
-        src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"C'mon friend!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-7"
-        src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"A rose for mommy!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-8"
-        src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"You gunna finish that?"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-9"
-        src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"We can't afford a cat!"</p>
-    </div>
-    <div>
-      <img
-        className="grid-item grid-item-10"
-        src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        alt=""
-      />
-      <p>"Dis my fren!"</p>
-    </div>
-  </div>
-</div>
- 
- <Footer/>
-</>
-    )
+// Image imports
+
+import img1 from '../../assets/images/compressed/IMG_2387.jpg';
+import img2 from '../../assets/images/compressed/IMG_2390.jpg';
+import img3 from '../../assets/images/compressed/IMG_2395.jpg';
+import img4 from '../../assets/images/compressed/IMG_2399.jpg';
+import img5 from '../../assets/images/compressed/IMG_2400.jpg';
+import img6 from '../../assets/images/compressed/IMG_2405.jpg';
+import img7 from '../../assets/images/compressed/IMG_2414.jpg';
+import img8 from '../../assets/images/compressed/IMG_2418.jpg';
+import img9 from '../../assets/images/compressed/IMG_2419.jpg';
+import img10 from '../../assets/images/compressed/IMG_2420.jpg';
+import img11 from '../../assets/images/compressed/IMG_2876.jpg';
+import img12 from '../../assets/images/compressed/IMG_2908.jpg';
+import img13 from '../../assets/images/compressed/IMG_2927.jpg';
+import img14 from '../../assets/images/compressed/IMG_2932.jpg';
+import img15 from '../../assets/images/compressed/IMG_2956.jpg';
+import img16 from '../../assets/images/compressed/IMG_2975.jpg';
+import img17 from '../../assets/images/compressed/IMG_2976.jpg';
+import img18 from '../../assets/cars/c1.jpg'
+import img19 from '../../assets/cars/c2.jpg'
+import img20 from '../../assets/cars/c3_new.jpg'
+import img21 from '../../assets/images/compressed/IMG_2974.jpg'
+import img22 from '../../assets/cars/c4_new.jpg'
+import img23 from '../../assets/cars/c5.jpeg'
+import img24 from '../../assets/cars/c6.jpeg'
+import img25 from '../../assets/cars/c7.jpeg'
+import img26 from '../../assets/cars/c8.jpg'
+
+// Icon imports
+import prev from '../../assets/images/prev_img.svg';
+import next from '../../assets/images/next_img.svg';
+import close from '../../assets/images/close.svg';
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img10, img8, img9, img11, img12, img13, img14,
+  img15, img16, img17, img18, img19, img20, img21, img24, img25, img23, img22, img26, img25];
+
+function MGallery() {
+  const [data, setData] = useState({ img: '', i: 0 });
+  const [loading, setLoading] = useState(true); // New state to track loading
+  const [loadedCount, setLoadedCount] = useState(0); // Track how many images have loaded
+
+  const totalImages = images.length;
+
+  const viewImage = (img, i) => {
+    setData({ img, i });
+  };
+
+  const imgAction = (action) => {
+    let i = data.i;
+    if (action === 'next-image') {
+      setData({ img: images[i + 1], i: i + 1 });
+    } else if (action === 'prev-image') {
+      setData({ img: images[i - 1], i: i - 1 });
+    }
+    if (!action) {
+      setData({ img: '', i: 0 });
+    }
+  };
+
+  useEffect(() => {
+    if (data.img) {
+      document.body.style.overflow = 'hidden'; // Disable scroll
+    } else {
+      document.body.style.overflow = 'auto'; // Re-enable scroll
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [data.img]);
+
+  // Handle when each image is loaded
+  const handleImageLoad = () => {
+    setLoadedCount(prevCount => prevCount + 1); // Increment count when an image is loaded
+  };
+
+  useEffect(() => {
+    if (loadedCount === totalImages) {
+      setLoading(false); // All images are loaded, remove the loading screen
+    }
+  }, [loadedCount, totalImages]);
+
+  return (
+    <>
+      <MyClass />
+      <br />
+      <h1>Gallery</h1>
+
+      {/* Full-screen image view */}
+      {data.img && (
+        <div
+          style={{
+            width: '100%',
+            height: '100vh',
+            background: 'rgba(0, 0, 0, 0.8)',
+            top: 0,
+            zIndex: 2,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            overflowY: 'hidden',
+            position: 'fixed',
+          }}
+        >
+          <button className="img-change-btn-left" onClick={() => imgAction('prev-image')}>
+            <img src={prev} alt="Previous" className="img-btn" />
+          </button>
+          <button className="close-btn" onClick={() => imgAction()}>
+            <img src={close} alt="Close" className="img-btn" />
+          </button>
+          <img src={data.img} style={{ width: 'auto', maxWidth: '92%', maxHeight: '92%' }} alt="Gallery" />
+          <button className="img-change-btn-right" onClick={() => imgAction('next-image')}>
+            <img src={next} alt="Next" className="img-btn" />
+          </button>
+        </div>
+      )}
+
+      {/* Loading Screen */}
+      {loading && <div className="loading-text">Loading...</div>}
+
+      {/* Image Gallery */}
+      <div style={{ padding: '10px' }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry gutter="20px">
+            {images.map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                style={{ width: '100%', display: 'block', cursor: 'pointer' }}
+                alt=""
+                onClick={() => viewImage(image, i)}
+                onLoad={handleImageLoad} // Trigger handleImageLoad on each image load
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+
+      <Footer />
+    </>
+  );
 }
 
 export default MGallery;
