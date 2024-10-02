@@ -486,6 +486,16 @@ function SedricaCard() {
         {/* BTeam */}
       <h1 className="position">Business Team</h1>
       <div className="two-container row">
+      <div className="card-content col-lg-4">
+          <MyCard lnk={'https://www.linkedin.com/in/pratyaksh-bhardwaj-b2309ar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} img={b5} />
+          <h2 className="fw-normal">Pratyaksh Bhardwaj</h2>
+          <p className="card-p">Web Developer</p>
+        </div>
+        <div className="card-content col-lg-4">
+          <MyCard lnk={'https://www.linkedin.com/in/atharv-roday-a4b0a9293/'} img={b6} />
+          <h2 className="fw-normal">Atharv Roday</h2>
+          <p className="card-p">Web Developer</p>
+        </div>
         <div className="card-content col-lg-4">
           <MyCard lnk={'https://in.linkedin.com/in/renudhruva-s-5b5032269'} img={b1} />
           <h2 className="fw-normal">Renudhruva</h2>
@@ -504,24 +514,12 @@ function SedricaCard() {
         <div className="card-content col-lg-4">
           <MyCard lnk={'https://www.linkedin.com/in/dikshit-singla-b1538427a/'} img={b7} />
           <h2 className="fw-normal">Dikshit Singla</h2>
-          <p className="card-p">Creatives</p>
+          <p className="card-p">Marketing</p>
         </div>
-      </div>
-      <div className="two-container row">
         <div className="card-content col-lg-4">
           <MyCard lnk={'https://www.linkedin.com/in/khushi-chandak-5b1038297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} img={b4} />
           <h2 className="fw-normal">Khushi Chandak</h2>
           <p className="card-p">Creatives</p>
-        </div>
-        <div className="card-content col-lg-4">
-          <MyCard lnk={'https://www.linkedin.com/in/pratyaksh-bhardwaj-b2309ar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} img={b5} />
-          <h2 className="fw-normal">Pratyaksh Bhardwaj</h2>
-          <p className="card-p">Web Developer</p>
-        </div>
-        <div className="card-content col-lg-4">
-          <MyCard lnk={'https://www.linkedin.com/in/atharv-roday-a4b0a9293/'} img={b6} />
-          <h2 className="fw-normal">Atharv Roday</h2>
-          <p className="card-p">Web Developer</p>
         </div>
       </div>
 

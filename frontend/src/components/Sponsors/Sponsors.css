@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section-link {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
 .sponsors-container {
   padding: 20px;
   margin: 20px auto;
@@ -8,6 +18,16 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+.collaborate-container{
+  padding: 60px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  /* background-color: rgba(250,250,250,0.1); */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Style each row of sponsor images */
 .sponsor-row {
   display: flex;
@@ -16,6 +36,19 @@
   flex-wrap: wrap;
 }
 
+
+.fle{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.fle img{
+  flex: 1; /* Allow the image to take up less space */
+  width: 100%; /* Make the image responsive */
+  max-width: 360px; /* Set a maximum width for the image */
+  height: auto; 
+}
 /* Default style for images */
 .sponsor-image {
   width: 12.75rem; /* Default size for large screens */
@@ -30,7 +63,7 @@
 }
 
 .sponsor-image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
@@ -83,5 +116,100 @@
   }
   .small-image{
     max-width: 150px;
+  }
+}
+
+
+/* Sponsors.css */
+
+.collaborators-form-container {
+  padding: 20px;
+}
+
+.collaborators-form {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.input-field {
+  padding: 8px; /* Optional: Add padding */
+  width: 100%; /* Optional: Set a specific width */
+  border: 1px solid black; 
+  border-top-left-radius: 15px; /* Round the top-left corner */
+  border-bottom-left-radius: 15px; /* Round the bottom-left corner */
+  border-top-right-radius: 15px; /* Round the top-right corner */
+  border-bottom-right-radius: 15px; /* Round the bottom-right corner */
+  background-color: whitesmoke;
+}
+
+
+.submit-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: darkblue;
+}
+
+
+/* Very small screens (phones) */
+@media (max-width: 480px) {
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .input-field {
+    width: 100%; /* Full width on small screens */
+    max-width: none; /* Remove the max-width */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .submit-button {
+    width: 100%; /* Full width for button */
+    padding: 12px; /* Increase padding */
+    font-size: 14px; /* Adjust button text size */
+  }
+
+  .collaborate-container{
+    padding: 40px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .input-field {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .submit-button {
+    font-size: 12px;
+  }
+  .collaborate-container{
+    padding: 30px;
+  }
+}
+
+@media (max-width: 786px) {
+  .fle img{
+    display: none; /* Hide the image */
+  }
+
+  .fle {
+    flex-direction: column; /* Stack the form vertically */
   }
 }

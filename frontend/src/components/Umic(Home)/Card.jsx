@@ -1,5 +1,5 @@
 import logo from "../../assets/maxresdefault.jpg"
-import logo2 from "../../assets/Sed.png";
+
 
 function Card() {
   return (

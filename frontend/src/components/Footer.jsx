@@ -39,9 +39,8 @@ function Footer() {
               >
                 <div>
                   <h4>Contact Us</h4>
-                  <h6>Name: Aryan Mishra</h6>
                   <h6>Phone No: 8197020074</h6>
-                  <h6>Email:</h6>
+                  <h6>Email: <a href="mailto:aryan.9232122@gmail.com" style={{textDecoration:"none",color:"white"}}> aryan.9232122@gmail.com </a></h6>
                   <h6>Location:</h6>
                 </div>
               

@@ -1,18 +1,9 @@
-import logo from "../../assets/th.jpeg";
 import "./Hero.css";
-import { useEffect } from 'react';
 
+import e20 from "../../assets/cars/c8.jpg";
+import c4 from "../../assets/cars/c4.jpg";
+import flip from "../../assets/c6.jpg"
 function Hero() {
-  useEffect(() => {
-    // Initialize the Bootstrap carousel
-    const carouselElement = document.getElementById('carouselExampleCaptions');
-    if (carouselElement) {
-      const carousel = new window.bootstrap.Carousel(carouselElement, {
-        interval: 2000, // Time between slides in milliseconds
-        wrap: true, // Loop back to the start when the end is reached
-      });
-    }
-  }, []);
   return (
     <>
       <div
@@ -43,26 +34,23 @@ function Hero() {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="2000">
-            <img src={logo} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+          <div className="carousel-item active" data-bs-interval="2500">
+            <img src={e20} className="d-block w-100" alt="..." />
+            <div className="caption top-0 start-0 text-start p-4">
+              <h1> MAHINDRA E20</h1>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={logo} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+          <div className="carousel-item" data-bs-interval="2500">
+            <img src={c4} className="d-block w-100" alt="..." />
+            <div className="caption top-0 start-0 text-start p-4">
+              <h1>Palis</h1>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={logo} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+          <div className="carousel-item" data-bs-interval="2500">
+            <img src={flip} className="d-block w-100" alt="..." />
+            {/* <div className="caption top-0 start-0 text-start p-4">
+              <h1>Gridvictus</h1>
+            </div> */}
           </div>
         </div>
 

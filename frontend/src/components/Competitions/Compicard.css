@@ -5,7 +5,7 @@
   }
   
   .lead {
-    font-size: 1rem; /* Smaller text size for paragraphs on small screens */
+    font-size: 0.90rem; /* Smaller text size for paragraphs on small screens */
   }
 }
 
@@ -15,4 +15,17 @@
   align-items: center;
   justify-content: center;
   flex: 1; /* Allows the image column to grow */
+}
+
+.ettt {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  max-width: 525px; /* Caps the width at 600px */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .ettt {
+    max-width: 100%; /* Allow the image to take the full width on smaller screens */
+  }
 }

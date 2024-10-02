@@ -1,13 +1,13 @@
 import Footer from '../Footer';
 import Logo from '../Logo';
+import MyClass from '../Nav';
 import Content from "./Content";
 import Hero from "./Hero";
-import Homenav from './Homenav';
 
 function Homepage(){
     return(
         <>
-        <Homenav />
+        <MyClass />
         <Logo/>
         <Hero/>
         <Content/>

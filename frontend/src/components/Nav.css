@@ -9,6 +9,13 @@
 .navigation ul li.active .icon img{
   opacity: 100%;
 }
+
+
+.navigation ul li a .icon:hover + .text,
+.navigation ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(20px);
+}
 /* Hamburger Menu Styles */
 .hamburger-menu {
   display: none; /* Hidden by default */
@@ -53,6 +60,12 @@
   font-size: 1.5em;
   font-weight: 500;
 }
+
+
+ion-icon {
+  pointer-events: none;
+ }
+
 
 /* Responsive Styles */
 @media screen and (max-width: 820px) {
