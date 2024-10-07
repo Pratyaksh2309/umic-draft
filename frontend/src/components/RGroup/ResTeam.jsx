@@ -4,6 +4,7 @@ import MyCard from "./CardTwist";
 
 import oc from '../../assets/Research Group/Aaditi1.jpg';
 import p1 from '../../assets/Research Group/ArchakM.png';
+import p2 from '../../assets/Research Group/amit.jpg';
 import sub1 from '../../assets/Research Group/Nasir.JPG';
 import sub2 from '../../assets/Research Group/ParthLoya1.jpg';
 import sub3 from '../../assets/Research Group/Angshuman1.jpg';
@@ -30,6 +31,7 @@ function ResCard() {
             .two-container {
                 display: flex;
                 flex-direction: row;
+                flex-wrap:  wrap;
                 justify-content: center;
                 gap: 2rem; /* Horizontal gap between cards */
                 margin-bottom: 0.1rem; /* Vertical spacing between rows */
@@ -74,14 +76,14 @@ function ResCard() {
       />
       {/* OCs */}
       <h1 className="position">Faculty Advisors</h1>
-      <div className="two-container row">
+      <div className="two-container">
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'archak[at]civil.iitb.ac.in'} lnk={'https://www.linkedin.com/in/mittalarchak/'} img={p1} />
           <h2 className="fw-normal"> Archak Mittal </h2>
           <p>Connected Autonomous Vehicles, Intelligent transportation system, road safety, logistics </p>
         </div>
         <div className="card-content col-lg-4">
-          <MyCard lnk_mail={'asethi@ee.iitb.ac.in'} lnk={'https://www.linkedin.com/in/amit-sethi-590b2a3/'} img={sub2} />
+          <MyCard lnk_mail={'asethi@ee.iitb.ac.in'} lnk={'https://www.linkedin.com/in/amit-sethi-590b2a3/'} img={p2} />
           <h2 className="fw-normal">Amit Sethi</h2>
           <p>Deep learning and its application to digital pathology for analysis of cancer tissue images</p>
         </div>
@@ -102,7 +104,7 @@ function ResCard() {
 
       {/* Subsystem Heads */}
       <h1 className="position">PhD Candidates</h1>
-      <div className="two-container row">
+      <div className="two-container">
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'aaditi.kumari@iitb.ac.in'} lnk={'https://www.linkedin.com/in/aaditi-kumari-84a242254/'} img={oc} />
           <h2 className="fw-normal"> Aaditi Kumari</h2>
