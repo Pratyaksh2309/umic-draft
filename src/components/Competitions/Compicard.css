@@ -1,0 +1,31 @@
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem; /* Smaller text size on small screens */
+  }
+  
+  .lead {
+    font-size: 0.90rem; /* Smaller text size for paragraphs on small screens */
+  }
+}
+
+/* Flexbox to make the right card (image) larger */
+.card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Allows the image column to grow */
+}
+
+.ettt {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  max-width: 525px; /* Caps the width at 600px */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .ettt {
+    max-width: 100%; /* Allow the image to take the full width on smaller screens */
+  }
+}
