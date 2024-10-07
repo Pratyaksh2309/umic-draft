@@ -62,7 +62,7 @@ function Content() {
         <div className="col-md-5 d-flex align-items-center">
           <video
             ref={videoRef}
-            className="w-100"
+            className="w-100 round"
             style={{
               height: "auto",
               maxHeight: "100%",

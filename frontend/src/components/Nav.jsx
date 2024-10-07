@@ -168,7 +168,7 @@ function MyClass() {
                 <span className="icon">
                 <ion-icon name="newspaper"></ion-icon>
                 </span>
-                <span className="text" style={{fontSize:"0.55rem"}}>Blogs & Media</span>
+                <span className="text">Blogs</span>
                 <span className="circle" />
               </Link>
             </li>

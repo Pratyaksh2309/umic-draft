@@ -17,6 +17,7 @@ import asb from "../../assets/sponsor/asbsys.png";
 import ea from "../../assets/sponsor/ea.png";
 import "./Sponsors.css"; // Import the CSS file
 import t2 from "../../assets/t2.png"
+import cr from "../../assets/Research Group/cr.png"
 import MyClass from "../Nav";
 
 function Sponsors() {
@@ -54,7 +55,7 @@ function Sponsors() {
       <MyClass />
 
       <h1 className="main-heading" style={{margin:"20px"}}>
-        <a href="#sponsors" className="section-link" style={{color:"red"}}>Sponsors</a> and <a href="#collaborators" className="section-link">Collaborators</a>
+         <a href="#collaborators" className="section-link"> <button className="square-btn rounded-2">Collaborate With Us  ⬇ </button></a>
       </h1>
 
       {/* Sponsors Section */}
@@ -89,7 +90,7 @@ function Sponsors() {
       {/* Collaborators Section */}
       <div id="collaborators" className="collaborators-form-container">
         <div className="collaborate-container">
-          <h2 style={{textAlign:"center"}}>Collaborate with Us</h2>
+          <h2 style={{textAlign:"center",fontFamily:'Planer'}}>Collaborate with Us</h2>
           <div className="fle">
           {isSubmitted ? (
             <p className="confirmation-message">
@@ -97,7 +98,8 @@ function Sponsors() {
             </p>
           ) : (
             <form className="collaborators-form" onSubmit={handleSubmit}>
-              <div className="form-group">
+              <div className="two">
+              <div className="form-group" style={{flex:"1"}}>
                 <input
                   type="text"
                   name="companyName"
@@ -106,7 +108,7 @@ function Sponsors() {
                   required
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group" style={{flex:"1"}}>
                 <input
                   type="email"
                   name="email"
@@ -114,6 +116,7 @@ function Sponsors() {
                   placeholder="Email Address"
                   required
                 />
+              </div>
               </div>
               <div className="form-group">
                 <input
@@ -132,12 +135,12 @@ function Sponsors() {
                   placeholder="Purpose of Collaboration"
                 ></textarea>
               </div>
-              <button type="submit" className="square-btn submit-button">
+              <button type="submit" className="square-btn rounded-4 submit-button">
                 Submit
               </button>
             </form>
           )}
-          <img src={t2} alt="Hi"/>
+          <img className="justify-content-center align-items-center" src={t2} alt="Hi"/>
         </div>
         </div>
       </div>

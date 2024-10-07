@@ -33,3 +33,7 @@
     color: white;
     transform: translateY(-5px); /* Pop-up effect */
 }
+
+.square-btn:hover a{
+    color: white;
+}

@@ -81,8 +81,9 @@
 
 
 .section-heading{
-  font-family: 'Archivo Black';
+  font-family: 'Planer';
   font-size: 3rem;
   text-align: center;
+  font-weight: 700;
   padding: 2%;
 }

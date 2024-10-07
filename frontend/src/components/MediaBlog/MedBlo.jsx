@@ -83,7 +83,7 @@ function MedBlo() {
           <div className="col-md-4"> 
             <div className="position-sticky" style={{ top: "2rem", marginBottom: "4rem" }}>
               <div className="p-4 mb-3 bg-body-tertiary rounded mb-4">
-                <h4 className="fst-italic">About</h4>
+                <h4>About Us</h4>
                 <p className="mb-0">
                 Welcome to Sedrica Insights, the official blog of UMIC Sedrica, IIT Bombay's autonomous car driving team. </p>
                 <p className="mb-0">Our blog is dedicated to providing insightful articles, updates, and in-depth analysis on cutting-edge developments in autonomous driving technology, robotics, and artificial intelligence.</p>

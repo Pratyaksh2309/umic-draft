@@ -13,10 +13,10 @@ function Card() {
       >
         <div className="row d-flex align-items-stretch">
           
-          <div className="col-lg-6 d-flex align-items-stretch mb-3 mb-lg-0">
-            <div className="w-100 border rounded shadow-sm position-relative">
+          <div className="col-lg-6 d-flex align-items-stretch mb-3 mb-lg-0 ">
+            <div className="w-100 border round shadow-sm position-relative">
               <img
-                className="bd-placeholder-img w-100 h-100"
+                className="bd-placeholder-img w-100 h-100 round"
                 src={logo}
                 alt="Logo"
                 style={{ objectFit: "cover" }}

@@ -1,13 +1,4 @@
-/* Adjust text size for smaller screens */
-@media (max-width: 768px) {
-  .display-4 {
-    font-size: 2rem; /* Smaller text size on small screens */
-  }
-  
-  .lead {
-    font-size: 0.90rem; /* Smaller text size for paragraphs on small screens */
-  }
-}
+
 
 /* Make all images in the right column equal-sized and responsive */
 .card-right {
@@ -32,9 +23,22 @@
 }
 @media (max-width: 425px) {
   .lead{
-    font-size: 0.60rem;
+    font-size: 0.80rem;
   }
   .display-4 {
     font-size: 1.5rem; /* Smaller text size on small screens */
   }
 }
+
+/* Adjust text size for smaller screens */
+@media (max-width: 1100px) {
+  .display-4 {
+    font-size: 2rem; /* Smaller text size on small screens */
+  }
+  
+  .lead {
+    font-size: 0.90rem; /* Smaller text size for paragraphs on small screens */
+  }
+}
+
+
