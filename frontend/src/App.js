@@ -9,6 +9,7 @@ import Homepage from './components/Umic(Home)/Homepage';
 import MRgro from './components/RGroup/MRgro';
 import MGallery from './components/Gallery/MGallery';
 import MedBlo from './components/MediaBlog/MedBlo';
+import Subsystems from "./components/Subsystems/Subsystems";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/competitions" element={<Competition />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/Teams/Sedrica" element={<Sedrica />} />
+            <Route path="/Subsystems" element={<Subsystems />} />
             <Route path="/MediaBlog" element={<MedBlo />} />
             <Route path="/Gallery" element={<MGallery />} />
             <Route path="/ResearchGroup" element={<MRgro />} />

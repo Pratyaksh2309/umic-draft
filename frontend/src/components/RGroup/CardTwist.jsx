@@ -1,4 +1,4 @@
-function MyCard({img, lnk}) {
+function MyCard({img, lnk,lnk_mail}) {
     return (
       <>
         <style
@@ -152,9 +152,17 @@ function MyCard({img, lnk}) {
                 }}
               ></div>
               <div className="back">
-                <div className="inner">
-         
-                  <a className='linkedin_link' target='_blank' rel="noreferrer" href={lnk}><ion-icon size='large' name="logo-linkedin"></ion-icon></a>
+              <div className="inner">
+                  <a className='linkedin_link' target='_blank' rel="noreferrer" href={lnk}>
+                    <span title="linkedin">
+                      <ion-icon style={{pointerEvents: 'none'}} size='large' name="logo-linkedin"></ion-icon>
+                    </span>
+                  </a>
+                  <a className='linkedin_link' target='_blank' rel="noreferrer" href={`mailto:${lnk_mail}`}>
+                    <span title="Email">
+                      <ion-icon style={{pointerEvents: 'none'}} size='large' name="mail" title="hi"></ion-icon>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

@@ -132,7 +132,7 @@ function Sponsors() {
                   placeholder="Purpose of Collaboration"
                 ></textarea>
               </div>
-              <button type="submit" className="submit-button">
+              <button type="submit" className="square-btn submit-button">
                 Submit
               </button>
             </form>

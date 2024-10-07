@@ -9,23 +9,32 @@
   }
 }
 
-/* Flexbox to make the right card (image) larger */
+/* Make all images in the right column equal-sized and responsive */
 .card-right {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex: 1; /* Allows the image column to grow */
+  align-items: center;
 }
 
-.ettt {
-  width: 100%; /* Ensures the image takes the full width of its container */
-  max-width: 525px; /* Caps the width at 600px */
-  height: auto; /* Maintains the aspect ratio */
+.card-right img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures that image fits well inside the container */
+  width: 100%; /* Make image container fill available space */
+  max-height: 250px; /* Limit image height for uniformity */
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
-  .ettt {
-    max-width: 100%; /* Allow the image to take the full width on smaller screens */
+/* Add responsiveness */
+@media (min-width: 768px) {
+  .card-right img {
+    max-height: 300px; /* Larger height on medium to large screens */
+  }
+}
+@media (max-width: 425px) {
+  .lead{
+    font-size: 0.60rem;
+  }
+  .display-4 {
+    font-size: 1.5rem; /* Smaller text size on small screens */
   }
 }

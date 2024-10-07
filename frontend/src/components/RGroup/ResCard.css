@@ -48,3 +48,7 @@
     width: 150px;
     height: 150px;
 }
+
+.center-container p{
+    text-align: center;
+}

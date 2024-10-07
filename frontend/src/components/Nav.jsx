@@ -21,14 +21,16 @@ function MyClass() {
         return 1;
       case "/Teams/Sedrica":
         return 2;
+      case "/Subsystems":
+        return 3;
       case "/MediaBlog":
-          return 3;
-      case "/Gallery":
           return 4;
+      case "/Gallery":
+          return 5;
       case "/sponsors":
-        return 5;
-      case "/ResearchGroup":
         return 6;
+      case "/ResearchGroup":
+        return 7;
       default:
         return 0;
     }
@@ -150,6 +152,18 @@ function MyClass() {
               className={`list ${activeIndex === 3 ? "active" : ""}`}
               onClick={() => handleClick(3)}
             >
+              <Link to="/Subsystems">
+                <span className="icon">
+                <ion-icon name="grid"></ion-icon>
+                </span>
+                <span className="text">Subsystems</span>
+                <span className="circle" />
+              </Link>
+            </li>
+            <li
+              className={`list ${activeIndex === 4 ? "active" : ""}`}
+              onClick={() => handleClick(4)}
+            >
               <Link to="/MediaBlog">
                 <span className="icon">
                 <ion-icon name="newspaper"></ion-icon>
@@ -159,8 +173,8 @@ function MyClass() {
               </Link>
             </li>
             <li
-              className={`list ${activeIndex === 4 ? "active" : ""}`}
-              onClick={() => handleClick(4)}
+              className={`list ${activeIndex === 5 ? "active" : ""}`}
+              onClick={() => handleClick(5)}
             >
               <Link to="/Gallery">
                 <span className="icon">
@@ -171,8 +185,8 @@ function MyClass() {
               </Link>
             </li>
             <li
-              className={`list ${activeIndex === 5 ? "active" : ""}`}
-              onClick={() => handleClick(5)}
+              className={`list ${activeIndex === 6 ? "active" : ""}`}
+              onClick={() => handleClick(6)}
             >
               <Link to="/sponsors">
                 <span className="icon p">
@@ -183,8 +197,8 @@ function MyClass() {
               </Link>
             </li>
             <li
-              className={`list ${activeIndex === 6 ? "active" : ""}`}
-              onClick={() => handleClick(6)}
+              className={`list ${activeIndex === 7 ? "active" : ""}`}
+              onClick={() => handleClick(7)}
             >
               <Link to="/ResearchGroup">
                 <span className="icon">
@@ -206,10 +220,11 @@ function MyClass() {
           <Link to="/" onClick={() => handleClick(0)}>UMIC</Link>
           <Link to="/competitions" onClick={() => handleClick(1)}>Competition</Link>
           <Link to="/Teams/Sedrica" onClick={() => handleClick(2)}>Sedrica</Link>
-          <Link to="/MediaBlog" onClick={() => handleClick(3)}>Blogs & Media</Link>
-          <Link to="/Gallery" onClick={() => handleClick(4)}>Gallery</Link>
-          <Link to="/sponsors" onClick={() => handleClick(5)}>Sponsors</Link>
-          <Link to="/ResearchGroup" onClick={() => handleClick(6)}>Research</Link>
+          <Link to="/Subsystems" onClick={() => handleClick(3)}>Subsystems</Link>
+          <Link to="/MediaBlog" onClick={() => handleClick(4)}>Blogs & Media</Link>
+          <Link to="/Gallery" onClick={() => handleClick(5)}>Gallery</Link>
+          <Link to="/sponsors" onClick={() => handleClick(6)}>Sponsors</Link>
+          <Link to="/ResearchGroup" onClick={() => handleClick(7)}>Research</Link>
           <a style={{ color: "red" }} href={location.pathname} onClick={() => handleClick(activeIndex)}>Close</a>
         </div>
       </div>

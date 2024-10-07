@@ -8,7 +8,7 @@ function MedBlo() {
     <>
       <MyClass />
       <br />
-      <div> {/* Added Bootstrap container to prevent overflow */}
+      <div className="alp"> {/* Added Bootstrap container to prevent overflow */}
         <div className="ro"> 
           <div className="col-md-8 px-md-4"> {/* Changed px-md-5 to px-md-4 to avoid excessive padding */}
 
@@ -24,7 +24,7 @@ function MedBlo() {
               <img
                 src={phi1} 
                 width="100%"
-                height="550px"
+                height="auto"
                 style={{ border: "none" }}
                 alt="Embedded Webpage"
                 /></a>
@@ -48,7 +48,7 @@ function MedBlo() {
               <img
                 src={phi} 
                 width="100%"
-                height="550px"
+                height="auto"
                 style={{ border: "none" }}
                 alt="Embedded Webpage"
                 /></a>
@@ -68,7 +68,7 @@ function MedBlo() {
               <iframe
                 src="https://www.theindianwire.com/education/iit-bombay-represent-india-international-level-usa-win-asia-level-99993/"
                 width="100%"
-                height="600px"
+                height="auto"
                 style={{ border: "none" }}
                 title="Embedded Webpage"
               ></iframe>
