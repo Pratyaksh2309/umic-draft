@@ -82,7 +82,10 @@
   .caption {
     margin: 0.5rem;
     top: 78%;
-    left: 15%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 900;
     }
     .carousel-item img {
       max-width: none;
@@ -102,15 +105,17 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .carousel-item {
-    height: 280px; /* Decrease the height for smaller screens */
+    height: 340px; /* Decrease the height for smaller screens */
     background-image: url("../../assets/cr.png");
   }
   .caption {
     margin: 0.5rem;
-    top: 80%;
-    left: 25%;
+    top: 85%;
+    left: 20%;
+    color: white;
+    background-color: black;
     }
     .carousel-item img {
       max-width: none;
@@ -129,3 +134,36 @@
     }
   }
 }
+
+
+
+@media (max-width: 380px) {
+  .carousel-item {
+    height: 300px; /* Decrease the height for smaller screens */
+    background-image: url("../../assets/cr.png");
+  }
+  .caption {
+    margin: 0.5rem;
+    top: 83%;
+    left: 25%;
+    color: white;
+    background-color: black;
+  }
+    .carousel-item img {
+      max-width: none;
+      max-height: none;
+      height: auto;
+      object-fit: contain; /* Ensure image fits within the container and keeps its aspect ratio */
+    }
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.0);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+}
+

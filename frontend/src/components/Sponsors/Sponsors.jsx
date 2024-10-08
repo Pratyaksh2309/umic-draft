@@ -104,7 +104,7 @@ function Sponsors() {
                   type="text"
                   name="companyName"
                   className="input-field"
-                  placeholder="Name of the Company"
+                  placeholder="NAME OF THE COMPANY"
                   required
                 />
               </div>
@@ -113,7 +113,7 @@ function Sponsors() {
                   type="email"
                   name="email"
                   className="input-field"
-                  placeholder="Email Address"
+                  placeholder="EMAIL ADDRESS"
                   required
                 />
               </div>
@@ -123,7 +123,8 @@ function Sponsors() {
                   type="url"
                   name="website"
                   className="input-field"
-                  placeholder="Company Website"
+                  placeholder="COMPANY WEBSITE"
+
                   required
                 />
               </div>
@@ -132,7 +133,7 @@ function Sponsors() {
                   name="purpose"
                   className="input-field"
                   required
-                  placeholder="Purpose of Collaboration"
+                  placeholder="PURPOSE OF COLLABORATION"
                 ></textarea>
               </div>
               <button type="submit" className="square-btn rounded-4 submit-button">
@@ -140,7 +141,7 @@ function Sponsors() {
               </button>
             </form>
           )}
-          <img className="justify-content-center align-items-center" src={t2} alt="Hi"/>
+          {/* <img className="justify-content-center align-items-center" src={t2} alt="Hi"/>  */}
         </div>
         </div>
       </div>

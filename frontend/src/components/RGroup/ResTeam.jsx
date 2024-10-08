@@ -89,7 +89,7 @@ function ResCard() {
         </div>
       </div>
       <div className="center-container">
-        <h1 className="position">PhD Foreign TA</h1>
+        <h1 className="position">PhD TA</h1>
         <MyCard img={sub1} lnk_mail={'naser_hassan@iitb.ac.in '} lnk={'https://www.linkedin.com/in/naser-hassan-b66a8a298'} />
         <h2 className="fw-normal">Naser khaleel</h2>
         <p>Assessment of the market demand for CAV</p>

@@ -43,7 +43,7 @@ function Footer() {
                   <h4>Contact Us</h4>
                   <h6>Phone No: 8197020074</h6>
                   <h6>Email: <a href="mailto:aryan.9232122@gmail.com" style={{textDecoration:"none",color:"white"}}> aryan.9232122@gmail.com </a></h6>
-                  <h6>Location: Opposite to Transit Building, IIT Bombay , Powai, Mumbai, Maharashtra 400076</h6>
+                  <h6>Location: UMIC Lab, Near Applied Materials Lab, Manas Building, IIT Bombay , Powai, Maharashtra 400076</h6>
 
                 </div>
               
